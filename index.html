@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <script src="https://kit.fontawesome.com/ac2e4403ae.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>⋆｡ﾟ☁︎｡⋆｡ ﾟ☾</title>
+    <title>⋆｡ﾟ☁︎｡⋆｡ﾟ☾</title>
+
   </head>
   <body>
 <div class="box">
@@ -17,5 +18,14 @@
 <li><a href="https://steamcommunity.com/id/unflower/"><i class="fa-brands fa-steam"></i></a></li>
 </ul>
 </div>
+        <script>
+      const base = "⋆｡ﾟ☁︎｡⋆｡ﾟ☾";
+      let current = base;
+
+      setInterval(() => {
+        current = current.slice(-1) + current.slice(0, -1);
+        document.title = current;
+      }, 250);
+    </script>
 </body>
 </html>
